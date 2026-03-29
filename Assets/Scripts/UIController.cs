@@ -7,13 +7,16 @@ public class UIController : MonoBehaviour
 {
     public static UIController Instance;
     private PlayerController player;
-    [SerializeField] private Slider playerHealthSlider;
+    [SerializeField] private GameObject playerHealthBar;
+    [SerializeField] private Gradient HPGradient;
+    private RectTransform playerHealthBarRect;
+    private Image playerHealthBarImage;
     [SerializeField] private TMP_Text playerHealthText;
     [SerializeField] private TMP_Text timerText;
     public GameObject gameOverPanel;
     public GameObject pausePanel;
     
-
+    private float barWidth;
 
     void Awake()
     {
@@ -27,15 +30,27 @@ public class UIController : MonoBehaviour
         }
     }
 
-    public void UpdateHealthSlider()
+    void Start()
+    {
+        playerHealthBarRect = playerHealthBar.GetComponent<RectTransform>();
+        playerHealthBarImage = playerHealthBar.GetComponent<Image>();
+        barWidth = playerHealthBarRect.rect.width;
+    }
+
+    public void UpdateHealthBar()
     {
         if (player == null)
         {
             player = PlayerController.Instance;
         }
         if (player == null) return;
-        playerHealthSlider.maxValue = player.maxHealth;
-        playerHealthSlider.value = player.currentHealth;
+
+        float ratio = player.currentHealth / player.maxHealth;
+        float offset = barWidth * (1 - ratio);
+
+        playerHealthBarRect.anchoredPosition = new Vector2(-offset, 0);
+        playerHealthBarImage.color = HPGradient.Evaluate(ratio);
+
         playerHealthText.text = $"{player.currentHealth} / {player.maxHealth}";
     }
 

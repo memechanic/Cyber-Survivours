@@ -9,8 +9,12 @@ public class CharacterManager : MonoBehaviour
 
 
     public TMP_Text characterName;
+    public GameObject characterSprite;
     public TMP_Text characterHealth;
+    public TMP_Text characterArmor;
     public TMP_Text characterSpeed;
+    public TMP_Text characterDamage;
+
 
 
     private int selectedCharacter = 0;
@@ -36,6 +40,9 @@ public class CharacterManager : MonoBehaviour
         characterName.text = character.name;
         characterHealth.text = character.maxHealth.ToString();
         characterSpeed.text = character.movementSpeed.ToString();
+        characterArmor.text = character.armor.ToString();
+        characterDamage.text = character.baseDamage.ToString();
+        characterSprite.GetComponent<Image>().sprite = character.face;
     }
 
     private void Save()

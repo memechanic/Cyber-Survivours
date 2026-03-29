@@ -15,9 +15,15 @@ MonoBehaviour:
   characters:
   - name: Scanner
     texture: {fileID: 7108339969198208228, guid: b0cc2d650f6429e468365557739f6715, type: 3}
+    face: {fileID: 1679305324, guid: 6f4c051b63412a548b5fe5e7abe30640, type: 3}
     maxHealth: 10
+    armor: 1
     movementSpeed: 5
+    baseDamage: 5
   - name: Firewall
     texture: {fileID: 7108339969198208228, guid: c572f572c9b767949bbf6505bf4b94a0, type: 3}
+    face: {fileID: -1473074203, guid: 5faa42b3800623043afbeb199f69d0eb, type: 3}
     maxHealth: 20
+    armor: 3
     movementSpeed: 3
+    baseDamage: 3

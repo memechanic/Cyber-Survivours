@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        UIController.Instance.UpdateHealthSlider();
+        UIController.Instance.UpdateHealthBar();
 
         CM_Camera.GetComponent<CinemachineCamera>().Follow = gameObject.transform;
 
@@ -87,7 +87,8 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        UIController.Instance.UpdateHealthSlider();
+        currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
+        UIController.Instance.UpdateHealthBar();
 
         if (currentHealth <= 0)
         {
