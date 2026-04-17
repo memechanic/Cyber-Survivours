@@ -18,7 +18,7 @@ MonoBehaviour:
     face: {fileID: 1679305324, guid: 6f4c051b63412a548b5fe5e7abe30640, type: 3}
     maxHealth: 10
     armor: 1
-    movementSpeed: 5
+    movementSpeed: 3
     baseDamage: 5
   - name: Firewall
     texture: {fileID: 7108339969198208228, guid: c572f572c9b767949bbf6505bf4b94a0, type: 3}

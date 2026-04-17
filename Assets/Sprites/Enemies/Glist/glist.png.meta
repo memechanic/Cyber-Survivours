@@ -1,0 +1,1172 @@
+fileFormatVersion: 2
+guid: c12a64d3ba5202541a576451ab91b22b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2266053817217766051
+    second: glist_sprites_0
+  - first:
+      213: 704961838465128670
+    second: glist_sprites_1
+  - first:
+      213: -945338660650420648
+    second: glist_sprites_2
+  - first:
+      213: 3443585990460198821
+    second: glist_sprites_3
+  - first:
+      213: -785077448660766863
+    second: glist_sprites_4
+  - first:
+      213: 8003288684327296173
+    second: glist_sprites_5
+  - first:
+      213: -8932189115179174540
+    second: glist_sprites_6
+  - first:
+      213: -3293322971665660602
+    second: glist_sprites_7
+  - first:
+      213: -5616345488284238478
+    second: glist_sprites_8
+  - first:
+      213: -9188152161289649312
+    second: glist_sprites_9
+  - first:
+      213: 3963394605528444124
+    second: glist_sprites_10
+  - first:
+      213: -5911868381093471431
+    second: glist_sprites_11
+  - first:
+      213: 5383677080194908003
+    second: glist_sprites_12
+  - first:
+      213: -7057149790987155708
+    second: glist_sprites_13
+  - first:
+      213: -1461814232419020972
+    second: glist_sprites_14
+  - first:
+      213: 6619182867486187601
+    second: glist_sprites_15
+  - first:
+      213: -6739012890494326550
+    second: glist_sprites_16
+  - first:
+      213: 723170579837002526
+    second: glist_sprites_17
+  - first:
+      213: 6765026866911381066
+    second: glist_sprites_18
+  - first:
+      213: 1630247734525014890
+    second: glist_sprites_19
+  - first:
+      213: 64735263272320455
+    second: glist_sprites_20
+  - first:
+      213: 2538337789948983404
+    second: glist_sprites_21
+  - first:
+      213: 8062474273096470754
+    second: glist_sprites_22
+  - first:
+      213: 2007314661341866172
+    second: glist_sprites_23
+  - first:
+      213: -8854165103272286600
+    second: glist_sprites_24
+  - first:
+      213: -3477859338040036767
+    second: glist_sprites_25
+  - first:
+      213: -7075276404442305911
+    second: glist_sprites_26
+  - first:
+      213: 2142986350224104786
+    second: glist_sprites_27
+  - first:
+      213: -2341248371768273383
+    second: glist_sprites_28
+  - first:
+      213: -6879514668269462244
+    second: glist_sprites_29
+  - first:
+      213: -6438101664850254625
+    second: glist_sprites_30
+  - first:
+      213: -8580999441380925455
+    second: glist_sprites_31
+  - first:
+      213: 2034955957783059596
+    second: glist_sprites_32
+  - first:
+      213: 2170205553189330053
+    second: glist_sprites_33
+  - first:
+      213: -108619059312719039
+    second: glist_sprites_34
+  - first:
+      213: -5305607719311808832
+    second: glist_sprites_35
+  - first:
+      213: 8790553102489643812
+    second: glist_sprites_36
+  - first:
+      213: -2775381298046187636
+    second: glist_sprites_37
+  - first:
+      213: -1850702773595591031
+    second: glist_sprites_38
+  - first:
+      213: 8168396822465156428
+    second: glist_sprites_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: glist_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 252
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50ed2fe51ab64644a3315620c289ad0
+      internalID: 50162990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 252
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1619352771689af499fa1278975b25e0
+      internalID: -668458154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 253
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e916ba4768e0bf3459ac8b3e7dffd93b
+      internalID: -748292282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 251
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a95edfb5d96144f95b275565cab239
+      internalID: -1324878645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_4
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 250
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4fd6be8798e7d489b224e2c3eaae03
+      internalID: 725956250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_5
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 251
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0d2edc89be0894c8273c96b3eebb09
+      internalID: 1131808862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_6
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 253
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f5a91c2881ffe459e67726c3d364a9
+      internalID: 205404650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_7
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 252
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e889de2a1bf618c44a00c3deb990b6db
+      internalID: -2104274200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 201
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400aafab53e012b4bb7ec45ab691bba4
+      internalID: -792366891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 201
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c48c9338d1e484a964739f759a5e23
+      internalID: 1131461494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 201
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b09581a587dba64f96327ac189f2944
+      internalID: 355605594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_11
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 201
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65b456423607f44c88db20cf0249426
+      internalID: -1808717507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 194
+        width: 14
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a65c840c7c2134448ed5dcbcc0a0a45
+      internalID: -151533990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 194
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7314bda91bbe764cadbcda9fe9dd3f4
+      internalID: 1697502908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 195
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa423bd2ffd2b1544a6fce47ce53e29d
+      internalID: -125339324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 193
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ed156012424f74792c02f8fb875abc
+      internalID: -1843658848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 141
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14f60b9f71241e47b14fb2e9a3979c3
+      internalID: -519866612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_17
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 142
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f42bdbe7000c7148be9b6689d74e143
+      internalID: -57214614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_18
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 143
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18507e3844dc3b64c9f3bbf13fc79d2f
+      internalID: 282354918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 141
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3556f1a79633de4ebcb71b78e35706e
+      internalID: -1309320054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_20
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 137
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaae9c9f359c17459f0c6a57e697377
+      internalID: -2073099098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_21
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 138
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dbcac7a5fd9b8459c6289d540e1085
+      internalID: -1374458588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_22
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 137
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2996aa0eb7dad2419b467638800da8c
+      internalID: 556155473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_23
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 137
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b826bc0e4689a3418de24435b51ed49
+      internalID: -1582336639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 85
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ab796bef6565146a90bb35b0ac0d9a
+      internalID: -647970990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 86
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c6c676de85111488550b59d1feb71c
+      internalID: -1101509639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_26
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 86
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c53ca09decd9e7489e41c75f749441d
+      internalID: 1026167213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 84
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa3acf6300d60e4b8ae795736e56e7c
+      internalID: 835307795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_28
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 80
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c64a731070471e40acf198c85beba75
+      internalID: -1452282046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_29
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 80
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fafa15def6db748a03e3841dd0f6a3
+      internalID: -1497313521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_30
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 80
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7385727078f0df04db0a6531612ea40b
+      internalID: -2025883397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_31
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 80
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d49586bfad0074ca239a5c8b95b652
+      internalID: 1389001028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_32
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 32
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b35fa4e4791a842860ba46544ec827
+      internalID: -1778563656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_33
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 32
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5194c3b12a29ea14696377fff9e9611d
+      internalID: -1546163566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_34
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 33
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c1b48d860e7cc46992e68895753029
+      internalID: 763686716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_35
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 32
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a7ab0d58837324d9e9efb74a0782ed
+      internalID: 984376546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_36
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 31
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136ef3a8fb313bb49b2385eca3bb34d6
+      internalID: -1464194755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_37
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 31
+        width: 37
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ac710c6f50c3244bba22ea048f4f9f
+      internalID: -1696034827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_38
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 32
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9272e47d71bbe74c97fedde9525133d
+      internalID: -710137964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glist_39
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 31
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808af1c9734e3e04b958e7dd49f9ee49
+      internalID: -379659332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d0e9bbe764b25804b97e4826f43e1e8f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":5.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      glist_0: 50162990
+      glist_1: -668458154
+      glist_10: 355605594
+      glist_11: -1808717507
+      glist_12: -151533990
+      glist_13: 1697502908
+      glist_14: -125339324
+      glist_15: -1843658848
+      glist_16: -519866612
+      glist_17: -57214614
+      glist_18: 282354918
+      glist_19: -1309320054
+      glist_2: -748292282
+      glist_20: -2073099098
+      glist_21: -1374458588
+      glist_22: 556155473
+      glist_23: -1582336639
+      glist_24: -647970990
+      glist_25: -1101509639
+      glist_26: 1026167213
+      glist_27: 835307795
+      glist_28: -1452282046
+      glist_29: -1497313521
+      glist_3: -1324878645
+      glist_30: -2025883397
+      glist_31: 1389001028
+      glist_32: -1778563656
+      glist_33: -1546163566
+      glist_34: 763686716
+      glist_35: 984376546
+      glist_36: -1464194755
+      glist_37: -1696034827
+      glist_38: -710137964
+      glist_39: -379659332
+      glist_4: 725956250
+      glist_5: 1131808862
+      glist_6: 205404650
+      glist_7: -2104274200
+      glist_8: -792366891
+      glist_9: 1131461494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,7 +5,7 @@ public class CharacterDataBase : ScriptableObject
 {
     public Character[] characters;
     
-    public int characterCount
+    public int CharacterCount
     {
         get { return characters.Length; }
     }

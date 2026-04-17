@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     private Scene currrentScene;
 
-    private bool isPaused;
+    public bool isPaused;
     private bool isGameOver = false;
     public float gameTime;
 
@@ -46,11 +46,13 @@ public class GameManager : MonoBehaviour
     IEnumerator ShowGameOverScreen()
     {
         yield return new WaitForSeconds(1.5f);
+        isPaused = true;
         UIController.Instance.gameOverPanel.SetActive(isGameOver);
     }
 
     public void RestartGame()
     {
+        isPaused = false;
         SceneManager.LoadScene("Character Select");
     }
 
@@ -63,8 +65,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RestartGame1()
+    {
+        isPaused = false;
+        SceneManager.LoadScene("Game");
+    }
+
     public void LoadMenu()
     {
+        isPaused = false;
         SceneManager.LoadScene("Main Menu");
     }
 

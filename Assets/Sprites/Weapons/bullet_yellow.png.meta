@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bccc6f4b229fbcd4888d08f722139138
+guid: 0dc946de4d4cb12428470683055c4875
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6508088177669895679
-    second: MenuSpriteHigh_0
+      213: -8452331321771674448
+    second: bullet_yellow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MenuSpriteHigh_0
+      name: bullet_yellow_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 100
+        width: 64
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff5feec57bf515a50800000000000000
-      internalID: 6508088177669895679
+      spriteID: 0b434e9f17943ba80800000000000000
+      internalID: -8452331321771674448
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MenuSpriteHigh_0: 6508088177669895679
+      bullet_yellow_0: -8452331321771674448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

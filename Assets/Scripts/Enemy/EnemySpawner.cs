@@ -53,7 +53,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private  System.Collections.IEnumerator SpawnEnemy()
+    private System.Collections.IEnumerator SpawnEnemy()
     {
         Vector2 spawnPosition = RandomSpawnPoint();
         GameObject spawn = Instantiate(spawnPointPrefab, spawnPosition, transform.rotation);
@@ -68,10 +68,30 @@ public class EnemySpawner : MonoBehaviour
     private Vector2 RandomSpawnPoint()
     {
         Vector2 spawnPoint;
-
-        spawnPoint.x = Random.Range(minPos.position.x, maxPos.position.x);
-        spawnPoint.y = Random.Range(minPos.position.y, maxPos.position.y);
-
+        int side = Random.Range(0, 4);
+        switch (side)
+        {
+            case 0: // Up
+                spawnPoint.x = Random.Range(minPos.position.x, maxPos.position.x);
+                spawnPoint.y = maxPos.position.y;
+                break;
+            case 1: // Right
+                spawnPoint.x = maxPos.position.x;
+                spawnPoint.y = Random.Range(minPos.position.y, maxPos.position.y);
+                break;
+            case 2: // Down
+                spawnPoint.x = Random.Range(minPos.position.x, maxPos.position.x);
+                spawnPoint.y = minPos.position.y;
+                break;
+            case 3: // Left
+                spawnPoint.x = minPos.position.x;
+                spawnPoint.y = Random.Range(minPos.position.y, maxPos.position.y);
+                break;
+            default: // default Up
+                spawnPoint.x = Random.Range(minPos.position.x, maxPos.position.x);
+                spawnPoint.y = maxPos.position.y;
+                break;
+        }
         return spawnPoint;
     }
 }

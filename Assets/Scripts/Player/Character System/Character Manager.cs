@@ -27,7 +27,7 @@ public class CharacterManager : MonoBehaviour
 
     public void SelectCharacter(int index = 0)
     {
-        if (index > characterDB.characterCount || index < 0)
+        if (index > characterDB.CharacterCount || index < 0)
             selectedCharacter = 0;
         else selectedCharacter = index;
         UpdateCharacter();
