@@ -16,6 +16,9 @@ public class ItemCollector : MonoBehaviour
             Item itemComponent = item.gameObject.GetComponent<Item>();
             if (itemComponent != null)
             {
+                // Play sound
+                AudioController.Instance.PlayModifiedSound(AudioController.Instance.itemCollect);
+
                 // Apply the item effect to the player
                 playerController.ApplyItemEffect(itemComponent.itemData);
                 

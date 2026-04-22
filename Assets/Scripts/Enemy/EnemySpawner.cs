@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -7,9 +8,11 @@ public class EnemySpawner : MonoBehaviour
     [System.Serializable]
     public class Wave
     {
+        public string waveName;
         public GameObject enemyPrefab;
         public float spawnInterval;
         public int enemiesPerWave;
+        public float enemiesMultiplier = 1;
         [Space]
         public int spawnedEnemyCount;
         public float spawnTimer;
@@ -27,42 +30,95 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        if (PlayerController.Instance.gameObject.activeSelf)
-        {
-            currentWave = waves[waveNumber];
+        if (!PlayerController.Instance.gameObject.activeSelf)
+            return;
 
-            currentWave.spawnTimer += Time.deltaTime;
-            if (currentWave.spawnTimer > currentWave.spawnInterval)
+        if (waves == null || waves.Count == 0)
+            return;
+
+        if (waveNumber >= waves.Count)
+        {
+            PlayerController.Instance.UpdateExpMulti();
+            waveNumber = 0;
+        }
+
+        currentWave = waves[waveNumber];
+
+        GameObject enemyPrefab = currentWave.enemyPrefab;
+        float spawnMult = currentWave.enemiesMultiplier;
+
+        currentWave.spawnTimer += Time.deltaTime;
+        if (currentWave.spawnTimer > currentWave.spawnInterval)
+        {
+            currentWave.spawnTimer = 0;
+            Vector2 spawnPosition = RandomSpawnPoint();
+
+            Enemy.EnemyType enemyType = enemyPrefab.GetComponent<Enemy>().enemyType;
+
+            switch (enemyType)
             {
-                currentWave.spawnTimer = 0;
-                StartCoroutine("SpawnEnemy");
+                case Enemy.EnemyType.Single:
+                    StartCoroutine(SpawnEnemy(spawnPosition, enemyPrefab, spawnMult));
+                    break;
+                case Enemy.EnemyType.Group:
+                    SpawnEnemyGroup(spawnPosition, enemyPrefab, spawnMult);
+                    break;
             }
-            if (currentWave.spawnedEnemyCount >= currentWave.enemiesPerWave)
+
+            currentWave.spawnedEnemyCount++;
+        }
+        if (currentWave.spawnedEnemyCount >= currentWave.enemiesPerWave)
+        {
+            currentWave.spawnedEnemyCount = 0;
+            if (currentWave.spawnInterval >= 0.15f)
             {
-                currentWave.spawnedEnemyCount = 0;
-                if (currentWave.spawnInterval >= 0.3f)
-                {
-                    currentWave.spawnInterval *= 0.9f;
-                }
-                waveNumber++;
+                currentWave.enemiesPerWave += 5;
+                currentWave.enemiesMultiplier *= 1.2f;
+                currentWave.spawnInterval *= 0.9f;
             }
-            if (waveNumber >= waves.Count)
-            {
-                waveNumber = 0;
-            }
+
+            waveNumber++;
         }
     }
 
-    private System.Collections.IEnumerator SpawnEnemy()
+    private System.Collections.IEnumerator SpawnEnemy(Vector2 spawnPosition, GameObject enemyPrefab, float mult)
     {
-        Vector2 spawnPosition = RandomSpawnPoint();
         GameObject spawn = Instantiate(spawnPointPrefab, spawnPosition, transform.rotation);
         float spawnDelay = spawn.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length;
-        
+
         yield return new WaitForSeconds(spawnDelay);
 
-        Instantiate(currentWave.enemyPrefab, spawnPosition, transform.rotation);
-        currentWave.spawnedEnemyCount++;
+        GameObject enemy = Instantiate(enemyPrefab, spawnPosition, transform.rotation);
+        ApplyEnemyMultiplier(enemy, mult);
+    }
+
+    private static void ApplyEnemyMultiplier(GameObject enemy, float mult)
+    {
+        if (mult == 1f)
+            return;
+
+        Enemy e = enemy.GetComponent<Enemy>();
+        if (e == null)
+            return;
+
+        e.maxHealth *= mult;
+        e.damage *= mult;
+        e.moveSpeed *= mult;
+    }
+
+    private void SpawnEnemyGroup(Vector2 spawnPosition, GameObject enemyPrefab, float mult)
+    {
+        Enemy groupSettings = enemyPrefab.GetComponent<Enemy>();
+        int minEnimies = groupSettings.minEnemies;
+        int maxEnimies = groupSettings.maxEnemies;
+        float groupRadius = groupSettings.groupRadius;
+        int enemyCount = Random.Range(minEnimies, maxEnimies + 1);
+
+        for (int i = 0; i < enemyCount; i++)
+        {
+            Vector2 enemyPosition = spawnPosition + Random.insideUnitCircle * groupRadius;
+            StartCoroutine(SpawnEnemy(enemyPosition, enemyPrefab, mult));
+        }
     }
 
     private Vector2 RandomSpawnPoint()

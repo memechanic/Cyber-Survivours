@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-4742729871106657460
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Riot_theme_{-4742729871106657460}
+  m_AudioClip: {fileID: 8300000, guid: 6931f83cb5bf66a43b9ae01d32391456, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1268754827811852558
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SunnyScy - Against the Matrix_{-1268754827811852558}
+  m_AudioClip: {fileID: 8300000, guid: 39a5efc58e05fea4d9c002b27e3fdf86, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &334593217296270376
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Battle_theme_prison_{334593217296270376}
+  m_AudioClip: {fileID: 8300000, guid: b2ec94851b368764da4d21fab6b80385, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1750742428849172934
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Battle_theme_sewerage_loopable_{1750742428849172934}
+  m_AudioClip: {fileID: 8300000, guid: f197cbbed4b0d1744ba22cd85d6ba7f4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2084701372410530883
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: wekont - runner2088.mp3_{2084701372410530883}
+  m_AudioClip: {fileID: 8300000, guid: cf1e818abfefaa34aba441de802f9619, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &4235787972495193994
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Main_theme_alternative_loopable_{4235787972495193994}
+  m_AudioClip: {fileID: 8300000, guid: ba68ea6daa0d21a4f9cb12bc139aa0ea, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &6401439794377688478
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Emotional_theme_{6401439794377688478}
+  m_AudioClip: {fileID: 8300000, guid: 66c597f38d546ab498e9668f13798eb9, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: InGameMusic
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 1
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 334593217296270376}
+  - {fileID: 1750742428849172934}
+  - {fileID: 6401439794377688478}
+  - {fileID: 4235787972495193994}
+  - {fileID: -4742729871106657460}
+  - {fileID: -1268754827811852558}
+  - {fileID: 2084701372410530883}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 1
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 0
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

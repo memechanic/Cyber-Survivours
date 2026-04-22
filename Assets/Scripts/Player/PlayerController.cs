@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using NUnit.Framework.Constraints;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,6 +11,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
 
+    private GameManager gameManager;
+
     [Header("PLayer Configuration")]
     [SerializeField] private CharacterDataBase characterDB;
 
@@ -18,15 +22,17 @@ public class PlayerController : MonoBehaviour
 
     public float maxHealth;
     public float currentHealth;
+    public float baseDamage;
 
     public int currentExpirience;
     public int maxExpirience;
     public int currentLevel = 1;
     public int maxLevel = 30;
     public List<int> expToLevelUp;
+    public int expMulti = 1;
 
     public int sessionCoins;
-    
+
     private int selectedCharacter;
     private Character settings;
     private Rigidbody2D rb;
@@ -38,7 +44,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float immunityDuration;
     [SerializeField] private float immunityTimer;
 
-    private GameManager gameManager;
+    [SerializeField] private List<Weapon> inactiveWeapons;
+    public List<Weapon> activeWeapons;
+    [SerializeField] private List<Weapon> upgradeableWeapons;
+    public List<Weapon> maxLevelWeapons;
 
     void Awake()
     {
@@ -63,6 +72,15 @@ public class PlayerController : MonoBehaviour
         moveSpeed = settings.movementSpeed;
         maxHealth = settings.maxHealth;
         currentHealth = maxHealth;
+        baseDamage = settings.baseDamage;
+
+        for (int i = 0; i < inactiveWeapons.Count; i++)
+        {
+            if (inactiveWeapons[i].basicDescription == settings.weapon)
+            {
+                AddWeapon(i);
+            }
+        }
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -77,7 +95,7 @@ public class PlayerController : MonoBehaviour
         int next;
         for (int i = expToLevelUp.Count; i < maxLevel; i++)
         {
-            next = Mathf.CeilToInt(expToLevelUp[expToLevelUp.Count - 1] * 1.1f + 10);
+            next = Mathf.CeilToInt(expToLevelUp[expToLevelUp.Count - 1] + 10);
             expToLevelUp.Add(next);
         }
         maxExpirience = expToLevelUp[currentLevel - 1];
@@ -117,7 +135,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (context.canceled) animator.SetBool("IsWalking", false);
-        
+
         animator.SetFloat("InputX", moveInput.x);
         animator.SetFloat("InputY", moveInput.y);
     }
@@ -143,6 +161,8 @@ public class PlayerController : MonoBehaviour
             {
                 StartCoroutine(ResetColor());
             }
+
+            AudioController.Instance.PlayModifiedSound(AudioController.Instance.playerTakeDamage);
         }
     }
 
@@ -152,24 +172,63 @@ public class PlayerController : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.white;
     }
 
+    public void UpdateExpMulti()
+    {
+        expMulti += 2;
+    }
+
     public void GetExp(int exp)
     {
-        currentExpirience += exp;
+        currentExpirience += exp * expMulti;
         if (currentExpirience >= maxExpirience)
         {
-            currentLevel += 1;
-            currentExpirience %= maxExpirience;
-            if (currentLevel <= 30)
-            {
-                maxExpirience = expToLevelUp[currentLevel - 1];
-            }
-            else
-            {
-                maxExpirience = expToLevelUp[-1];
-            }
-            UIController.Instance.UpdateLevelText();
+            LevelUp();
         }
         UIController.Instance.UpdateExpirienceBar();
+    }
+
+    public void LevelUp()
+    {
+        if (currentLevel < maxLevel)
+        {
+            currentLevel++;
+            currentExpirience -= maxExpirience;
+            maxExpirience = expToLevelUp[currentLevel - 1];
+            UIController.Instance.UpdateLevelText();
+
+            upgradeableWeapons.Clear();
+            if (activeWeapons.Count > 0)
+            {
+                upgradeableWeapons.AddRange(activeWeapons);
+            }
+            if (inactiveWeapons.Count > 0)
+            {
+                upgradeableWeapons.AddRange(inactiveWeapons);
+            }
+            int randomIndex = Random.Range(0, upgradeableWeapons.Count);
+            if (upgradeableWeapons.ElementAtOrDefault(randomIndex) != null)
+            {
+                UIController.Instance.weaponLevelUpButton.ActivateButton(upgradeableWeapons[randomIndex]);
+            }
+
+            UIController.Instance.OpenLevelUpPanel();
+
+            AudioController.Instance.PlaySound(AudioController.Instance.playerLevelUp);
+        }
+    }
+
+    private void AddWeapon(int index)
+    {
+        activeWeapons.Add(inactiveWeapons[index]);
+        inactiveWeapons[index].gameObject.SetActive(true);
+        inactiveWeapons.RemoveAt(index);
+    }
+
+    public void ActivateWeapon(Weapon weapon)
+    {
+        weapon.gameObject.SetActive(true);
+        activeWeapons.Add(weapon);
+        inactiveWeapons.Remove(weapon);
     }
 
     public void GetHeal(float healPercent)
@@ -199,5 +258,36 @@ public class PlayerController : MonoBehaviour
                 GetCoin((int)itemData.value);
                 break;
         }
+    }
+
+    public float GetBaseDamage()
+    {
+        return baseDamage;
+    }
+
+    public void UpgradeMaxHealth(float value)
+    {
+        if (value <= 0f) return;
+
+        maxHealth += value;
+        currentHealth = maxHealth;
+        UIController.Instance.UpdateHealthBar();
+        UIController.Instance.CloseLevelUpPanel();
+    }
+
+    public void UpgradeMoveSpeedPercent(float percent)
+    {
+        if (percent <= 0f) return;
+
+        moveSpeed *= 1f + percent / 100f;
+        UIController.Instance.CloseLevelUpPanel();
+    }
+
+    public void UpgradeBaseDamage(float amount)
+    {
+        if (amount <= 0f) return;
+
+        baseDamage += amount;
+        UIController.Instance.CloseLevelUpPanel();
     }
 }

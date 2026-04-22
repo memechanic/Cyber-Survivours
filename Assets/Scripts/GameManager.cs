@@ -41,11 +41,17 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isGameOver = true;
+
+        AudioController.Instance.PlaySound(AudioController.Instance.playerDeath);
+
+        SaveManager.Instance.data.coins += PlayerController.Instance.sessionCoins;
+        SaveManager.Instance.Save();
+
         StartCoroutine(ShowGameOverScreen());
     }
     IEnumerator ShowGameOverScreen()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
         isPaused = true;
         UIController.Instance.gameOverPanel.SetActive(isGameOver);
     }
@@ -53,9 +59,24 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         isPaused = false;
+        SaveGame();
+        SceneManager.LoadScene("Game");
+    }
+
+    public void LoadCharacterSelect()
+    {
+        isPaused = false;
+        SaveGame();
         SceneManager.LoadScene("Character Select");
     }
 
+    public void LoadMenu()
+    {
+        isPaused = false;
+        SaveGame();
+        SceneManager.LoadScene("Main Menu");
+    }
+    
     public void PauseGame()
     {
         if (!isGameOver)
@@ -64,21 +85,21 @@ public class GameManager : MonoBehaviour
             UIController.Instance.pausePanel.SetActive(isPaused);
         }
     }
-
-    public void RestartGame1()
-    {
-        isPaused = false;
-        SceneManager.LoadScene("Game");
-    }
-
-    public void LoadMenu()
-    {
-        isPaused = false;
-        SceneManager.LoadScene("Main Menu");
-    }
-
+    
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void SaveGame()
+    {
+        if (PlayerController.Instance != null)
+        {
+            // Save time
+            // Save enemy killed
+            // Save Level
+            SaveManager.Instance.data.coins += PlayerController.Instance.sessionCoins;
+            SaveManager.Instance.Save();
+        }        
     }
 }

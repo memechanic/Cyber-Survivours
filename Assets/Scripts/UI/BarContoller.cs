@@ -45,7 +45,7 @@ public class BarContoller : MonoBehaviour
 
         animCoroutine = StartCoroutine(AnimateBar(offset, ratio));
     
-        barText.text = $"{curValue} / {maxValue}";
+        barText.text = $"{curValue:F1} / {maxValue:F1}";
     }
 
     private IEnumerator AnimateBar(float offset, float ratio)

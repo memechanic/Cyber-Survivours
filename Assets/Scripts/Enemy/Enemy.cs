@@ -1,11 +1,18 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
-{
+{   
     public float maxHealth = 1;
     public float damage = 1;
-    [SerializeField] private float moveSpeed = 5f;
+    public float moveSpeed = 5f;
     [SerializeField] private GameObject ExpOrb;
+    public enum EnemyType { Single, Group }
+    public EnemyType enemyType;
+    public int minEnemies;
+    public int maxEnemies;
+    public float groupRadius;
+
     
     public float pushDuration;
     [SerializeField] private GameObject deathFX;
@@ -88,6 +95,7 @@ public class Enemy : MonoBehaviour
             if (deathFX != null)
             {
                 Instantiate(deathFX, transform.position, transform.rotation);
+                AudioController.Instance.PlayModifiedSound(AudioController.Instance.enemyDeath);
             }
         }
     }

@@ -14,16 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDataBase
   characters:
   - name: Scanner
+    cost: 0
     texture: {fileID: 7108339969198208228, guid: b0cc2d650f6429e468365557739f6715, type: 3}
     face: {fileID: 1679305324, guid: 6f4c051b63412a548b5fe5e7abe30640, type: 3}
     maxHealth: 10
-    armor: 1
+    armor: 0
     movementSpeed: 3
-    baseDamage: 5
+    baseDamage: 1
+    weapon: area
   - name: Firewall
+    cost: 3
     texture: {fileID: 7108339969198208228, guid: c572f572c9b767949bbf6505bf4b94a0, type: 3}
     face: {fileID: -1473074203, guid: 5faa42b3800623043afbeb199f69d0eb, type: 3}
     maxHealth: 20
-    armor: 3
+    armor: 0
     movementSpeed: 3
+    baseDamage: 1
+    weapon: firewall
+  - name: Defragmenter
+    cost: 1
+    texture: {fileID: 7108339969198208228, guid: e364ec4bd22059f40a751babbcf79110, type: 3}
+    face: {fileID: -2126272939, guid: 0b56c1e397ce2114da297be8a28d9cf5, type: 3}
+    maxHealth: 10
+    armor: 0
+    movementSpeed: 4
+    baseDamage: 2
+    weapon: cabel
+  - name: Rootkit Hunter
+    cost: 1
+    texture: {fileID: 7108339969198208228, guid: 691141e91ec3c4446884f02f209f5378, type: 3}
+    face: {fileID: 2061158951, guid: f3619c8d78476024f908e040924be6fa, type: 3}
+    maxHealth: 7
+    armor: 0
+    movementSpeed: 4
     baseDamage: 3
+    weapon: blaster

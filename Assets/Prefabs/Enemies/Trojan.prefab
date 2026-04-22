@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1170009905, guid: 6b0aa63e4a87b2f459462c7b81aaa7ba, type: 3}
+  m_Sprite: {fileID: -2087279010, guid: 6b0aa63e4a87b2f459462c7b81aaa7ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.2D.Animation.Runtime::UnityEngine.U2D.Animation.SpriteResolver
-  m_CategoryHash: 5.984821e-15
-  m_labelHash: 6.268214e-19
+  m_CategoryHash: 2.0510701e-33
+  m_labelHash: 4.3437908e-17
   m_SpriteKey: 0
-  m_SpriteHash: 71818045
+  m_SpriteHash: 591905148
 --- !u!50 &3963498804314750774
 Rigidbody2D:
   serializedVersion: 5
@@ -188,8 +188,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.25
+  m_Offset: {x: 0, y: 0.015694618}
+  m_Radius: 0.3337044
 --- !u!95 &8201911413730459642
 Animator:
   serializedVersion: 7
@@ -224,9 +224,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8268e60b7a4e9604bbeb1c3d82b02e34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  maxHealth: 3
-  damage: 1
+  maxHealth: 10
+  damage: 3
   moveSpeed: 1
-  ExpOrb: {fileID: 1934085737240790940, guid: 71b9d1c3a9bf50f418ae61e7227804d0, type: 3}
-  pushDuration: 0.5
+  ExpOrb: {fileID: 6697428162716079887, guid: b834faf3d2400b04e8472f3050fe154f, type: 3}
+  enemyType: 0
+  minEnemies: 0
+  maxEnemies: 0
+  groupRadius: 0
+  pushDuration: 0.4
   deathFX: {fileID: 6773424734076985451, guid: 51a9f7cec251ad4428968f2c751387c5, type: 3}

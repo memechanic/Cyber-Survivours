@@ -233,12 +233,12 @@ TextureImporter:
       name: Spy_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 22
+        y: 342
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: Spy_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 89
+        y: 340
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: Spy_2
       rect:
         serializedVersion: 2
-        x: 136
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 158
+        y: 340
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: Spy_3
       rect:
         serializedVersion: 2
-        x: 204
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 226
+        y: 340
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: Spy_4
       rect:
         serializedVersion: 2
-        x: 272
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 294
+        y: 341
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: Spy_5
       rect:
         serializedVersion: 2
-        x: 340
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 361
+        y: 340
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: Spy_6
       rect:
         serializedVersion: 2
-        x: 408
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 430
+        y: 340
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: Spy_7
       rect:
         serializedVersion: 2
-        x: 476
-        y: 316
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 498
+        y: 340
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: Spy_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 20
+        y: 266
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: Spy_9
       rect:
         serializedVersion: 2
-        x: 68
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 87
+        y: 269
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: Spy_10
       rect:
         serializedVersion: 2
-        x: 136
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 155
+        y: 267
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: Spy_11
       rect:
         serializedVersion: 2
-        x: 204
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 222
+        y: 267
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: Spy_12
       rect:
         serializedVersion: 2
-        x: 272
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 295
+        y: 266
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: Spy_13
       rect:
         serializedVersion: 2
-        x: 340
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 363
+        y: 268
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: Spy_14
       rect:
         serializedVersion: 2
-        x: 408
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 431
+        y: 266
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,12 +563,12 @@ TextureImporter:
       name: Spy_15
       rect:
         serializedVersion: 2
-        x: 476
-        y: 237
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 499
+        y: 268
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: Spy_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 22
+        y: 186
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,12 +607,12 @@ TextureImporter:
       name: Spy_17
       rect:
         serializedVersion: 2
-        x: 68
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 90
+        y: 192
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: Spy_18
       rect:
         serializedVersion: 2
-        x: 136
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 158
+        y: 188
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -651,12 +651,12 @@ TextureImporter:
       name: Spy_19
       rect:
         serializedVersion: 2
-        x: 204
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 223
+        y: 188
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: Spy_20
       rect:
         serializedVersion: 2
-        x: 272
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 294
+        y: 186
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -695,12 +695,12 @@ TextureImporter:
       name: Spy_21
       rect:
         serializedVersion: 2
-        x: 340
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 362
+        y: 192
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -717,12 +717,12 @@ TextureImporter:
       name: Spy_22
       rect:
         serializedVersion: 2
-        x: 408
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 430
+        y: 188
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -739,12 +739,12 @@ TextureImporter:
       name: Spy_23
       rect:
         serializedVersion: 2
-        x: 476
-        y: 158
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 498
+        y: 188
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -761,12 +761,12 @@ TextureImporter:
       name: Spy_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 22
+        y: 108
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -783,12 +783,12 @@ TextureImporter:
       name: Spy_25
       rect:
         serializedVersion: 2
-        x: 68
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 91
+        y: 104
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -805,12 +805,12 @@ TextureImporter:
       name: Spy_26
       rect:
         serializedVersion: 2
-        x: 136
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 159
+        y: 109
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,12 +827,12 @@ TextureImporter:
       name: Spy_27
       rect:
         serializedVersion: 2
-        x: 204
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 226
+        y: 104
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -849,12 +849,12 @@ TextureImporter:
       name: Spy_28
       rect:
         serializedVersion: 2
-        x: 272
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+        x: 289
+        y: 102
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -871,12 +871,12 @@ TextureImporter:
       name: Spy_29
       rect:
         serializedVersion: 2
-        x: 340
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+        x: 356
+        y: 102
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -893,12 +893,12 @@ TextureImporter:
       name: Spy_30
       rect:
         serializedVersion: 2
-        x: 408
-        y: 80
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+        x: 426
+        y: 104
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -915,12 +915,12 @@ TextureImporter:
       name: Spy_31
       rect:
         serializedVersion: 2
-        x: 476
-        y: 79
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+        x: 493
+        y: 100
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -937,12 +937,12 @@ TextureImporter:
       name: Spy_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 19
+        y: 29
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -959,12 +959,12 @@ TextureImporter:
       name: Spy_33
       rect:
         serializedVersion: 2
-        x: 68
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 87
+        y: 29
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -981,12 +981,12 @@ TextureImporter:
       name: Spy_34
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 156
+        y: 31
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1003,12 +1003,12 @@ TextureImporter:
       name: Spy_35
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+        x: 224
+        y: 27
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1025,12 +1025,12 @@ TextureImporter:
       name: Spy_36
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 286
+        y: 25
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1047,12 +1047,12 @@ TextureImporter:
       name: Spy_37
       rect:
         serializedVersion: 2
-        x: 340
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 354
+        y: 28
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1069,12 +1069,12 @@ TextureImporter:
       name: Spy_38
       rect:
         serializedVersion: 2
-        x: 408
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 422
+        y: 26
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1091,12 +1091,12 @@ TextureImporter:
       name: Spy_39
       rect:
         serializedVersion: 2
-        x: 476
-        y: 0
-        width: 68
-        height: 79
-      alignment: 9
-      pivot: {x: 0.4, y: 0.6}
+        x: 490
+        y: 26
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1123,7 +1123,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":5.0},"gridSpriteSize":{"x":68.0,"y":79.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.6000000238418579},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Spy_0: 730841461
       Spy_1: -2005642327

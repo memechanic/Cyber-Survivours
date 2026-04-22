@@ -5,8 +5,9 @@ using UnityEngine.U2D.Animation;
 public class Character
 {
     public string name;
-    public SpriteLibraryAsset texture;
+    public int cost;
 
+    public SpriteLibraryAsset texture;
     public Sprite face;
 
     [Header("Charasteristics")]
@@ -14,4 +15,5 @@ public class Character
     public float armor;
     public float movementSpeed;
     public float baseDamage;
+    public string weapon;
 }

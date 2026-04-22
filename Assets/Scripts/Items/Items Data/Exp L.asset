@@ -16,4 +16,4 @@ MonoBehaviour:
   itemPrefab: {fileID: 1934085737240790940, guid: 71b9d1c3a9bf50f418ae61e7227804d0, type: 3}
   effectType: 0
   itemLifetime: 100
-  value: 5
+  value: 10

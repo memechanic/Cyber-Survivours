@@ -1,67 +1,69 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class AreaWeaponPrefab : MonoBehaviour
 {
     private GameManager gameManager;
     public AreaWeapon weapon;
-    private Vector2 targetSize;
-    private float growDelta;
-    private float duration;
-    private float counter;
+    private Vector3 targetSize;
+    private float timer;
+    public List<Enemy> enemiesInRange;
 
-    private List<Enemy> enemiesInRange;
+    private float counter;
+    private float scaleSpeed;
 
     void Start()
     {
         gameManager = GameManager.Instance;
 
         weapon = GetComponentInParent<AreaWeapon>();
-        growDelta = weapon.growDelta;
-        duration = weapon.duration;
-        counter = weapon.reloadTime;
-
-        enemiesInRange = new();
-
-        targetSize = Vector2.one * weapon.range;
+        targetSize = Vector2.one * weapon.stats[weapon.weaponLevel].range;
         transform.localScale = Vector2.zero;
+        timer = weapon.stats[weapon.weaponLevel].duration;
 
-        Destroy(gameObject, duration);
+        scaleSpeed = weapon.stats[weapon.weaponLevel].range / (weapon.stats[weapon.weaponLevel].duration * 0.3f); // 30% of the duration
     }
 
-    // Update is called once per frame
-    void Update()
+    void Update() {
+        GrowAndSrink();
+    }
+
+    public void GrowAndSrink()
     {
         if(gameManager.isPaused) return;
-        transform.localScale = Vector2.MoveTowards(transform.localScale, targetSize, growDelta);
-        
-        counter -= Time.deltaTime;
-        if(counter <= 0)
+        // grow and shrink towards targetSize
+        transform.localScale = Vector2.MoveTowards(transform.localScale, targetSize, scaleSpeed * Time.deltaTime);
+        // shrink and only then destroy
+        timer -= Time.deltaTime;
+        if (timer <= 0)
         {
-            counter = weapon.reloadTime;
-            if(enemiesInRange.Count != 0)
+            targetSize = Vector2.zero;
+            if (transform.localScale.x == 0f)
             {
-                for(int i = 0; i < enemiesInRange.Count; i++)
-                {
-                    enemiesInRange[i].TakeDamage(weapon.damage);
-                }
+                Destroy(gameObject);
+            }
+        }
+        // periodic damage
+        counter -= Time.deltaTime;
+        if (counter <= 0)
+        {
+            counter = weapon.stats[weapon.weaponLevel].attackSpeed;
+            for (int i = 0; i < enemiesInRange.Count; i++)
+            {
+                enemiesInRange[i].TakeDamage(weapon.GetDamage());
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            enemiesInRange.Add(other.GetComponent<Enemy>());
+    private void OnTriggerEnter2D(Collider2D collider){
+        if (collider.CompareTag("Enemy")){
+            enemiesInRange.Add(collider.GetComponent<Enemy>());
         }
     }
-    
-    private void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Enemy"))
-        {
-            enemiesInRange.Remove(other.GetComponent<Enemy>());
+
+    private void OnTriggerExit2D(Collider2D collider){
+        if (collider.CompareTag("Enemy")){
+            enemiesInRange.Remove(collider.GetComponent<Enemy>());
         }
     }
 }

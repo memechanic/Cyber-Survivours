@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,6 +26,9 @@ public class UIController : MonoBehaviour
     [Space]
     public GameObject gameOverPanel;
     public GameObject pausePanel;
+    public GameObject levelUpPanel;
+
+    public WeaponLevelUpButton weaponLevelUpButton;
 
     void Awake()
     {
@@ -74,6 +78,17 @@ public class UIController : MonoBehaviour
         float seconds = Mathf.FloorToInt(time % 60);
 
         timerText.text = $"{minutes:00}:{seconds:00}";
+    }
+
+    public void OpenLevelUpPanel()
+    {
+        levelUpPanel.SetActive(true);
+        GameManager.Instance.isPaused = true;
+    }
+    public void CloseLevelUpPanel()
+    {
+        levelUpPanel.SetActive(false);
+        GameManager.Instance.isPaused = false;
     }
 
 }

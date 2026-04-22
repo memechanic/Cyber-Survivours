@@ -28,6 +28,9 @@
 # Visual Studio cache directory
 .vs/
 
+# Cursor Ide cache directory
+.cursor/
+
 # Gradle cache directory
 .gradle/
 
